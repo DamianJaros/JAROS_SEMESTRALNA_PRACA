@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-custom {
+  background-color: #ffaa05;
+}
+
+.nav-custom .nav-link {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav-custom .nav-link:hover {
+  color: white;
+  background: none;
+  text-decoration: none;
+}
+
+.nav-custom .nav-link.active {
+  color: white;
+  background: none;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1) brightness(200%);
+}
+
+#prazdna_plocha {
+  height: 6em;
+}
+
+#nadpis {
+  text-align: center;
+}
+
+#nadpis h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.filter_vyhladavanie {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.filter_vyhladavanie {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.nadpis_vyhladaj h1 {
+  font-size: 2rem;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.vyhladavanie {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#filterText {
+  padding: 10px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0.7em;
+}
+
+#filterList li {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#bocny_panel {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 350px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease-in-out;
+  z-index: 9999;
+  padding: 1.5em;
+  overflow-y: auto;
+}
+
+#bocny_panel.active {
+  right: 0;
+}
+
+.bocny_panel_obsah h2 {
+  margin-top: 1em;
+  font-size: 1.5rem;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.bocny_panel_obsah p {
+  font-size: 1rem;
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+#zatvor_panel {
+  font-size: 2rem;
+  font-weight: 600;
+  display: block;
+  text-align: right;
+  color: #000000;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: color 0.5s ease, transform 0.5s ease;
+  transition-delay: 0.3s;
+}
+
+#zatvor_panel:hover {
+  color: #ffaa05;
+}
+
+.btn-warning {
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: white !important;
+}
+
+.footer {
+  background-color: #ffaa05;
+  margin: 0;
+  padding: 0;
+  height: 12em;
+}
+
+.socialne-siete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialne-siete #instagram {
+  height: 50px;
+  width: auto;
+  margin-top: 0.5em;
+  margin-right: 1em;
+}
+
+.socialne-siete #facebook {
+  height: 40px;
+  width: auto;
+}
+
+.socialne-siete #youtube {
+  height: 70px;
+  width: auto;
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
+
+#copyright {
+  text-align: center;
+  margin-top: 3em;
+}
+
+#copyright p {
+  font-size: 1.2rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  .filter_vyhladavanie {
+    grid-template-columns: 1fr;
+  }
+
+  .nadpis_vyhladaj h1 {
+    text-align: center;
+  }
+
+  #bocny_panel {
+    width: 100%;
+    right: -100%;
+  }
+}

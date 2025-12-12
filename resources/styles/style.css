@@ -1,0 +1,437 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-custom {
+  background-color: #ffaa05;
+}
+
+.nav-custom .nav-link {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav-custom .nav-link:hover {
+  color: white;
+  background: none;
+  text-decoration: none;
+}
+
+.nav-custom .nav-link.active {
+  color: white;
+  background: none;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1) brightness(200%);
+}
+
+.uvodny_obrazok {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.uvod-plocha {
+  position: relative;
+}
+
+.pomoc {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#text-pomoc p {
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+}
+
+#help-button {
+  display: flex;
+  justify-content: center;
+}
+
+#help-button button {
+  padding: 10px 40px;
+  border: none;
+  background-color: #ffaa05;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+}
+
+#help-button:hover button {
+  box-shadow: 3px 5px 7px 2px rgba(0, 0, 0, 0.3);
+}
+
+#nadpis-uvod {
+  text-align: center;
+}
+
+#nadpis-uvod h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+#prazdna_plocha {
+  height: 6em;
+}
+
+.section-uvod {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 1rem;
+  padding: 2rem 8rem;
+}
+
+#text-uvod p {
+  font-size: 1.7rem;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#button-uvod button {
+  padding: 7px 35px;
+  border: none;
+  background-color: #ffaa05;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+}
+
+#button-uvod:hover button {
+  box-shadow: 3px 5px 7px 2px rgba(0, 0, 0, 0.3);
+}
+
+#nadpis-posobenie {
+  text-align: center;
+}
+
+#nadpis-posobenie h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.slider {
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.slides {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #777777;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #ffaa05;
+}
+
+.custom-card {
+  max-width: 700px;
+  height: 350px;
+  border-radius: 30px !important;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.custom-card .col-md-5 {
+  height: 350px;
+}
+
+.custom-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.custom-card .card-body {
+  padding: 50px 60px;
+}
+
+.card-text {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: medium;
+  max-width: 350px;
+}
+
+.card {
+  box-shadow: 3px 5px 7px 2px rgba(0, 0, 0, 0.3);
+}
+
+#nadpis-uspechy {
+  text-align: center;
+}
+
+#nadpis-uspechy h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.uspech {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.uspech-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-bottom: 2px solid #777777;
+}
+
+.uspech-nadpis p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.uspech-icon img {
+  height: 1.2em;
+  transition: transform 0.3s;
+}
+
+.uspech-link.open .uspech-icon img {
+  transform: rotate(60deg);
+}
+
+.uspech-popis {
+  display: none;
+  margin-top: 0.5em;
+}
+
+.uspech-popis p {
+  width: 80%;
+  margin: 1em auto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+#nadpis-recenzie {
+  text-align: center;
+}
+
+#nadpis-recenzie h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.recenzie-slider {
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.recenzie-slides {
+  position: relative;
+}
+
+.recenzie-slide {
+  display: none;
+}
+
+.recenzie-slide.active {
+  display: block;
+}
+
+.recenzie-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.recenzie-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #777777;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recenzie-dot.active {
+  background-color: #ffaa05;
+}
+
+.footer {
+  background-color: #ffaa05;
+  margin: 0;
+  padding: 0;
+  height: 12em;
+}
+
+.socialne-siete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialne-siete #instagram {
+  height: 50px;
+  width: auto;
+  margin-top: 0.5em;
+  margin-right: 1em;
+}
+
+.socialne-siete #facebook {
+  height: 40px;
+  width: auto;
+}
+
+.socialne-siete #youtube {
+  height: 70px;
+  width: auto;
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
+
+#copyright {
+  text-align: center;
+  margin-top: 3em;
+}
+
+#copyright p {
+  font-size: 1.2rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+}
+
+#scrollHore {
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffaa05;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 1000px) {
+  #text-pomoc p {
+    font-size: 3rem;
+  }
+
+  #help-button button {
+    font-size: 1.2rem;
+    padding: 8px 30px;
+  }
+
+  .pomoc {
+    left: 7%;
+    gap: 15px;
+  }
+
+  .section-uvod {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+
+  #container-texty {
+    align-items: center;
+  }
+
+  #button-uvod {
+    justify-content: center;
+  }
+
+  .section-uvod img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .custom-card {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #text-pomoc p {
+    font-size: 2rem;
+  }
+
+  #help-button button {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  .pomoc {
+    left: 5%;
+    gap: 10px;
+  }
+
+  #container-texty p {
+    font-size: 1rem;
+  }
+
+  #button-uvod button {
+    font-size: 1rem;
+    padding: 7px 20px;
+  }
+}
